@@ -1,0 +1,394 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    width: 98%;
+    margin: auto;
+    height: 80dvh;
+    background: url(./bas-van-der-horst-lnBqmiw9woU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.solarSystem{
+    padding: 3rem;
+    width: 80dvw;
+    /* background-color: aqua; */
+    height: 60dvh;
+    margin: 8rem auto;
+    font-size: 1.8rem;
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+   
+
+
+}
+.solarSystem >h1{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgb(255, 186, 13), rgba(124, 53, 5, 0.884));
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    fill: transparent;
+}
+
+
+
+/* sizes for planet 
+
+jupiter= 1120% of earth 
+saturn = 945% of 
+uranus = 400%
+Nepture = 388%
+Earth = 
+Venus = 95 % of earth
+Mars = 53%
+mercurey = 38%
+
+
+*/
+/* 
+.sun__circle{
+    position: relative;
+    height: 28rem;
+    width: 28rem;
+    border-radius: 50%;
+    border: 1px solid rgb(31, 26, 26);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+
+.sun{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    /* border: none; */
+    background-color: rgb(246, 171, 106);
+    box-shadow: 0 0 30px 20px rgba(246, 171, 106, 0.866);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercury{
+    height: 20px;
+    width: 20px;
+    background: darkgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 42%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+
+
+    /* transform-origin: 0%; */
+    animation: spin 2s linear infinite ;
+
+}
+
+.mercury__circle{
+    height: 100px;
+    width: 100px;
+    border: 1px dotted black;
+    border-radius: 50%;
+/* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from{transform: rotate(0)translateX(50px) rotate(0deg);}
+    to{transform: rotate(360deg)translateX(50px) rotate(-360deg);}
+    
+}
+
+
+.venus{
+    height:3rem;
+    width: 3rem;
+    background-color: brown;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+
+    animation: spin1 7s linear infinite;
+}
+
+.venus__circle{
+
+    width: 140px;
+    height: 140px;
+    border: 1px dotted black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+
+}
+@keyframes spin1 {
+    from{transform: rotate(0) translateX(70px) rotate(0);}
+    to{transform: rotate(360deg) translateX(70px) rotate(-360deg);}
+
+    from{}
+    
+}
+
+.earth__circle{
+    width: 180px;
+    height: 180px;
+    border: 1px dotted black;
+    border-radius: 50%;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.earth{
+    height: 4rem;
+    width: 4rem;
+    background: darkgreen;
+    border-radius: 50%;
+    animation: spinE 9s linear infinite;
+    position: absolute;
+    top:40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spinE {
+    from{transform: rotate(0) translateX(90px) rotate(0);}
+    to{transform: rotate(360deg) translate(90px) rotate(-360deg);}
+}
+
+/* //mars starts  */
+
+.mars__circle{
+    height: 220px;
+    width: 220px;
+    border: 1px dotted black;
+    border-radius: 50%;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mars{
+    height: 3.3rem;
+    width: 3.3rem;
+    background: red;
+    border-radius: 50%;
+    
+    position: absolute;
+    top:41%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    
+    animation: spinM 6s linear infinite;
+}
+
+@keyframes spinM {
+    from{ transform: rotate(0) translateX(110px) rotate(0);}
+    to { transform: rotate(360deg) translateX(110px) rotate(-360deg);}
+    
+}
+
+/* jupitar starts */
+
+.jupitar__circle{
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: 1px dotted black;
+}
+
+.jupitar{
+    height: 6rem;
+    width: 6rem;
+    background: burlywood;
+    border-radius: 50%;
+
+    position: absolute;
+    top:40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation: spinJ 20s linear infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spinJ {
+    from{transform: rotate(0)translateX(130px) rotate(0);}
+    to{transform:  rotate(360deg) translateX(130px) rotate(-360deg);}
+    
+}
+
+/* saturn start  */
+.saturn__circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px dotted black;
+}
+.saturn{
+    height: 7rem;
+    width: 7rem;
+    background:  #9B7A01;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    transform: translate(-50% -50%);
+    animation: spinS 12s linear infinite;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spinS {
+    from{transform: rotate(0) translateX(150px) rotate(0);}
+    to{transform:rotate(360deg) translateX(150px) rotate(-360deg);}
+    
+}
+
+/* //static position so making class from it  */
+.position_m{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+  
+}
+
+.uranus__circle{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 1px dotted black;
+
+}
+
+.uranus{
+    height: 7rem;
+    width: 7rem;
+    background: mediumorchid;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50% -50%);
+    
+    animation: spinU 16s linear infinite;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spinU {
+    from{transform: rotate(0) translateX(170px) rotate(0);}
+    to{transform: rotate(360deg) translateX(170px) rotate(-360deg);}
+    
+}
+
+
+/* //neptune start  */
+
+.neptune__circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px dotted black;
+
+}
+.neptune{
+    height: 6rem;
+    width: 6rem;
+    background: blue;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50% -50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: spinN 18s ease-in infinite;
+}
+
+@keyframes spinN {
+    from{transform: rotate(0) translateX(200px) rotate(0);}
+    to{transform: rotate(360deg) translateX(200px) rotate(-360deg);}
+    
+}
+
+
+
+/* 
+.mercury__circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(31, 26, 26);
+}
+
+
+
+
+.venus{
+    height:3rem;
+    width: 3rem;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+
+
+
+.solarSystem > div:not(:last-child) {
+    margin-right: 6rem;
+} */
